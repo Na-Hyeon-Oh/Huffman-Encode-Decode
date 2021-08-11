@@ -60,9 +60,7 @@ Your main file should be in the folder where input files are in.
 
 ### Algorithm
 
-⚫ Overall, I used arrays* with the size MAX(=26).
-
-From these arrays’ INDEX, I got the character by adding ‘a’=97(in integer).
+⚫ Overall, I used arrays* with the size MAX(=26). From these arrays’ INDEX, I got the character by adding ‘a’=97(in integer).
 
 
 <br>
@@ -146,19 +144,28 @@ huffman
 
 To compress a file, your program will follow the following steps:
 
-– Read in the input file named ‘hw3 input.txt’, and calculate the frequencies of all alphabetic (a-z only) characters in the ASCII text file. Please ignore other characters except for alphabetic characters. Also, convert all uppercase characters into lowercase characters.
-– Construct a Huffman tree for all alphabetic (a-z only) characters that appear in the input file.
-– Output the header describing the tree to the output file named ‘hw3 output1.txt’. You can use any description to specify a binary tree.
-– Rewind the file to the beginning re-reading each symbol (character).
-– Append the (binary) encoding for each symbol to the output file ‘hw3 output1.txt’. Mark “HEADEREND” as the delimiter to separate the header from the compressed
+
+  - Read in the input file named ‘hw3 input.txt’, and calculate the frequencies of all alphabetic (a-z only) characters in the ASCII text file. Please ignore other characters except for alphabetic characters. Also, convert all uppercase characters into lowercase characters.
+
+  - Construct a Huffman tree for all alphabetic (a-z only) characters that appear in the input file.
+
+  - Output the header describing the tree to the output file named ‘hw3 output1.txt’. You can use any description to specify a binary tree.
+
+  - Rewind the file to the beginning re-reading each symbol (character).
+
+  - Append the (binary) encoding for each symbol to the output file ‘hw3 output1.txt’. Mark “HEADEREND” as the delimiter to separate the header from the compressed
 part.
 
 
 To uncompress the compressed file hw3 output1.txt, your program will follow the following steps:
-– Read in the Huffman tree from the compressed file hw3 output1.txt.
-– Use the header to reconstruct the Huffman tree.
-– Decode the input using the Huffman tree.
-– Write the binary code of each alphabetic character used in the input file and the decoded alphabetic (a-z only) characters to the output file named ‘hw3 output2.txt’. The binary codes should be sorted alphabetically.
+
+  - Read in the Huffman tree from the compressed file hw3 output1.txt.
+
+  - Use the header to reconstruct the Huffman tree.
+
+  - Decode the input using the Huffman tree.
+
+  - Write the binary code of each alphabetic character used in the input file and the decoded alphabetic (a-z only) characters to the output file named ‘hw3 output2.txt’. The binary codes should be sorted alphabetically.
 
 <br>
   
@@ -184,3 +191,4 @@ n :11
 huffman
 
   ```
+ 
